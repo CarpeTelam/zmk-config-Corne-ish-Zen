@@ -32,72 +32,77 @@
 
   keymap {
     compatible = "zmk,keymap";
-    default_layer {
-      bindings = <
 
+    default_layer {
+    label = "QWERTY";
+      bindings = <
         &kp LC(LEFT)     &kp Q           &kp W           &kp E           &kp R           &kp T               &kp Y           &kp U           &kp I           &kp O           &kp P           &kp RC(RIGHT)
         &kp CAPSLOCK     &hm LSHFT A     &hm LCTRL S     &hm LALT D      &hm LGUI F      &kp G               &kp H           &hm RGUI J      &hm RALT K      &hm RCTRL L     &hm RSHFT SEMI  &kp CAPSLOCK
         &kp LS(LC(LALT)) &kp Z           &kp X           &kp C           &kp V           &kp B               &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RS(RC(RALT))
                                                          &lt MSE ESC     &lt NUM BSPC    &lt NAV DEL         &lt MED TAB     &lt FUN SPACE   &lt CFG RET
-
       >;
     };
-    mouse_layer {
-      bindings = <
 
+    mouse_layer {
+      label = "MOUSE";
+      bindings = <
         &trans           &none           &none           &none           &none           &none               &none           &none           &none           &none           &none           &trans
         &trans           &kp LSHFT       &kp LCTRL       &kp LALT        &kp LGUI        &none               &none           &none           &none           &none           &none           &trans
         &trans           &none           &none           &none           &none           &none               &none           &none           &none           &none           &none           &trans
                                                          &none           &none           &none               &none           &none           &none
-
       >;
     };
-    number_layer {
-      bindings = <
 
+    number_layer {
+      label = "NUMBER";
+      bindings = <
         &trans           &none           &none           &none           &none           &none               &kp EQUAL       &kp N7          &kp N8          &kp N9          &kp N0          &trans
         &trans           &kp LSHFT       &kp LCTRL       &kp LALT        &kp LGUI        &none               &kp MINUS       &kp N4          &kp N5          &kp N6          &kp APOS        &trans
         &trans           &none           &none           &none           &none           &none               &kp GRAVE       &kp N1          &kp N2          &kp N3          &kp BSLH        &trans
                                                          &none           &none           &none               &kp LBKT        &kp RBKT        &none
       >;
     };
-    navigation_layer {
-      bindings = <
 
+    navigation_layer {
+      label = "NAV";
+      bindings = <
         &trans           &none           &none           &none           &none           &none               &none           &kp PSCRN       &kp SLCK        &kp PAUSE_BREAK &none           &trans
         &trans           &kp LSHFT       &kp LCTRL       &kp LALT        &kp LGUI        &none               &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &kp INS         &trans
         &trans           &none           &none           &none           &none           &none               &kp HOME        &kp PG_DN       &kp PG_UP       &kp END         &kp DEL         &trans
                                                          &none           &none           &none               &kp TAB         &kp SPACE       &kp RET
       >;
     };
-    media_layer {
-      bindings = <
 
+    media_layer {
+      label = "MEDIA";
+      bindings = <
         &trans           &none           &none           &none           &none           &none               &none           &none           &none           &none           &none           &trans
         &trans           &none           &none           &none           &none           &none               &none           &kp RGUI        &kp RALT        &kp RCTRL       &kp RSHFT       &trans
         &trans           &none           &none           &none           &none           &none               &none           &none           &none           &none           &none           &trans
                                                          &none           &none           &none               &none           &none           &none
       >;
     };
-    function_layer {
-      bindings = <
 
+    function_layer {
+      label = "FUNC";
+      bindings = <
         &trans           &kp F9          &kp F10         &kp F11         &kp F12         &none               &none           &none           &none           &none           &none           &trans
         &trans           &kp F5          &kp F6          &kp F7          &kp F8          &none               &none           &kp RGUI        &kp RALT        &kp RCTRL       &kp RSHFT       &trans
         &trans           &kp F1          &kp F2          &kp F3          &kp F4          &none               &none           &none           &none           &none           &none           &trans
                                                          &none           &none           &none               &none           &none           &none
       >;
     };
-    configuration_layer {
-      bindings = <
 
+    configuration_layer {
+      label = "CONFIG";
+      bindings = <
         &trans           &none           &none           &none           &none           &none               &bt BT_CLR      &none           &none           &none           &none           &trans
         &trans           &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4        &none           &kp RGUI        &kp RALT        &kp RCTRL       &kp RSHFT       &trans
         &trans           &none           &none           &none           &none           &none               &none           &none           &none           &none           &none           &trans
                                                          &none           &bt BT_PRV      &bt BT_NXT          &none           &none           &none
       >;
     };
-  };
 
+  };
 };
 
