@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/thisishuey
+      url-base: https://github.com/CarpeTelam
   projects:
     - name: zmk
       remote: zmkfirmware
