@@ -36,9 +36,9 @@
     default_layer {
     label = "QWERTY";
       bindings = <
-        &kp LC(LEFT)     &kp Q           &kp W           &kp E           &kp R           &kp T               &kp Y           &kp U           &kp I           &kp O           &kp P           &kp RC(RIGHT)
-        &kp CAPSLOCK     &hm LSHFT A     &hm LCTRL S     &hm LALT D      &hm LGUI F      &kp G               &kp H           &hm RGUI J      &hm RALT K      &hm RCTRL L     &hm RSHFT SEMI  &kp CAPSLOCK
-        &kp LS(LC(LALT)) &kp Z           &kp X           &kp C           &kp V           &kp B               &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp RS(RC(RALT))
+        &sl 4            &kp Q           &kp W           &kp E           &kp R           &kp T               &kp Y           &kp U           &kp I           &kp O           &kp P           &sl 1
+        &sl 5            &hm LSHFT A     &hm LCTRL S     &hm LALT D      &hm LGUI F      &kp G               &kp H           &hm RGUI J      &hm RALT K      &hm RCTRL L     &hm RSHFT SEMI  &sl 2
+        &sl 6            &kp Z           &kp X           &kp C           &kp V           &kp B               &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &sl 3
                                                          &lt MSE ESC     &lt NUM BSPC    &lt NAV DEL         &lt MED TAB     &lt FUN SPACE   &lt CFG RET
       >;
     };
